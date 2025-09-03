@@ -28,7 +28,7 @@ const projects: Project[] = [
   {
     id: 2,
     title: "RicettAIo",
-    description: "Programma generare ricette con IA da ingredienti.",
+    description: "Programma per generare ricette con AI da ingredienti.",
     technologies: ["React", "Prompt Engineering", "API"],
     githubUrl: "https://github.com/nicola-palo/ricettAIo.git",
     liveUrl: "https://nicolapalo.eu/ricettAIo/"
