@@ -19,6 +19,20 @@ interface Skill {
 const projects: Project[] = [
   {
     id: 1,
+    title: "catalogoProdotti",
+    description: "Progetto realizzato con Java Spring e MySQL, permette la gestione di prodotti tramite Mvc e Rest.",
+    technologies: ["Spring", "MySQL", "API"],
+    githubUrl: "https://github.com/nicola-palo/catalogoProdotti.git",
+  },
+  {
+    id: 2,
+    title: "catalogoProdottiClient",
+    description: "Progetto realizzato con Java Spring e MySQL, connessione a Rest e DB esterni (catalogoProdotti) per prodotti.",
+    technologies: ["Spring", "API"],
+    githubUrl: "https://github.com/nicola-palo/catalogoProdottiClient.git",
+  },
+  {
+    id: 3,
     title: "Prenota il tuo tavolo",
     description: "Programma di prenotazione tavoli completamente personalizzabile.",
     technologies: ["HTML", "CSS", "JavaScript", "Python", "Flask", "SQLite"],
@@ -26,7 +40,7 @@ const projects: Project[] = [
     liveUrl: "https://nicolapieropalo.pythonanywhere.com/"
   },
   {
-    id: 2,
+    id: 4,
     title: "RicettAIo",
     description: "Programma per generare ricette con AI da ingredienti.",
     technologies: ["React", "Prompt Engineering", "API"],
