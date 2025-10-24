@@ -60,6 +60,12 @@ body.dark .header {
   margin: 0 auto;
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
 .header-title {
   font-size: 20px;
   font-weight: 600;
@@ -72,6 +78,89 @@ body.dark .header-title {
 }
 
 /* Theme toggle button - Apple style */
+.language-toggle {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  min-width: 96px;
+  padding: 4px;
+  border: none;
+  border-radius: 9999px;
+  background: rgba(0, 0, 0, 0.05);
+  color: #1d1d1f;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  transition: background 0.2s ease, transform 0.2s ease;
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+
+.language-toggle:hover {
+  background: rgba(0, 0, 0, 0.08);
+  transform: scale(1.02);
+}
+
+.language-toggle:focus-visible {
+  outline: 2px solid #0a84ff;
+  outline-offset: 2px;
+}
+
+.language-toggle .toggle-option {
+  flex: 1;
+  text-align: center;
+  z-index: 1;
+  padding: 0 8px;
+  transition: color 0.2s ease;
+}
+
+.language-toggle .toggle-option.active {
+  color: #0a84ff;
+}
+
+.language-toggle .toggle-thumb {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: calc(50% - 4px);
+  height: calc(100% - 8px);
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+  pointer-events: none;
+}
+
+.language-toggle .toggle-thumb.toggle-thumb-left {
+  transform: translateX(0);
+}
+
+.language-toggle .toggle-thumb.toggle-thumb-right {
+  transform: translateX(100%);
+}
+
+body.dark .language-toggle {
+  background: rgba(255, 255, 255, 0.1);
+  color: #f5f5f7;
+}
+
+body.dark .language-toggle:hover {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+body.dark .language-toggle .toggle-option.active {
+  color: #61a8ff;
+}
+
+body.dark .language-toggle .toggle-thumb {
+  background: rgba(0, 0, 0, 0.65);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
 .theme-toggle {
   width: 40px;
   height: 40px;
