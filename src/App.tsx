@@ -48,61 +48,62 @@ const translations: Record<
     skillsTitle: "Competenze",
     contactsTitle: "Contatti",
     footerText: "\u00A9 2025 Nicola Palo. Tutti i diritti riservati.",
-    liveDemoLabel: "Demo online",
+    liveDemoLabel: "Live Demo",
   },
 };
 
 const projects: Project[] = [
   {
     id: 1,
-    title: "ragEngine",
+    title: "fe.bancomat.react",
     description: {
-      en: "Application to build and manage RAG pipelines, fully local and connected with Ollama LLM models.",
-      it: "Applicazione per gestire e creare RAG. Interamente locale e collegata con modelli LLM di Ollama.",
+      en: "React-based front end ATM, connected to two microservices with dedicated databases. Published on GitHub Pages.",
+      it: "FE ATM realizzato in React, collegato a due microservizi con appositi DB. Pubblicato con GitHub Pages.",
     },
-    technologies: ["React", "Sviluppo Android"],
-    githubUrl: "https://github.com/nicola-palo/RAG_engine",
+    technologies: ["React"],
+    githubUrl: "https://github.com/nicola-palo/fe.bancomat.react",
+    liveUrl: "https://nicolapalo.eu/fe.bancomat.react/",
   },
   {
     id: 2,
+    title: "be.bancomat.java",
+    description: {
+      en: "BE ATM main, first microservice developed in Java with Spring and PostgreSQL. Deployed with Render.",
+      it: "BE ATM principale, primo microservizio realizzato in Java con Spring e PostgreSQL. Pubblicato con Render.",
+    },
+    technologies: ["Spring", "PostgreSQL", "Docker"],
+    githubUrl: "https://github.com/nicola-palo/be.bancomat.java",
+  },
+  {
+    id: 3,
+    title: "be.chatBancomat.python",
+    description: {
+      en: "BE ATM of the Chat support, second microservice, built with Flask and SQLite. Deployed with Render.",
+      it: "BE ATM dell'assistenza Chat, secondo microservizio, realizzato con Flask e SQLite. Pubblicato con Render.",
+    },
+    technologies: ["Flask", "SQLite", "Docker"],
+    githubUrl: "https://github.com/nicola-palo/be.chatBancomat.python",
+  },
+  {
+    id: 4,
+    title: "prenotaIlTuoTavolo",
+    description: {
+      en: "Customizable restaurant table reservation platform. Deployed with PythonAnywhere.",
+      it: "Programma di prenotazione tavoli completamente personalizzabile. Pubblicato con PythonAnywhere.",
+    },
+    technologies: ["HTML", "CSS", "JavaScript", "Flask", "SQLite"],
+    githubUrl: "https://github.com/nicola-palo/prenota-il-tuo-tavolo.git",
+    liveUrl: "https://nicolapieropalo.pythonanywhere.com/",
+  },
+  {
+    id: 5,
     title: "fitMaster",
     description: {
       en: "Offline Android app for tracking exercises and workouts, built in Kotlin.",
       it: "Applicazione interamente locale per la gestione di esercizi e allenamenti, realizzata in Kotlin per Android.",
     },
-    technologies: ["Kotlin", "Sviluppo Android"],
-    githubUrl: "https://github.com/nicola-palo/FitMaster",
-  },
-  {
-    id: 3,
-    title: "catalogoProdotti",
-    description: {
-      en: "Java Spring and MySQL project for product management with MVC and REST endpoints.",
-      it: "Progetto realizzato con Java Spring e MySQL, permette la gestione di prodotti tramite Mvc e Rest.",
-    },
-    technologies: ["Spring", "MySQL", "API"],
-    githubUrl: "https://github.com/nicola-palo/catalogoProdotti.git",
-  },
-  {
-    id: 4,
-    title: "catalogoProdottiClient",
-    description: {
-      en: "Java Spring client connected to external REST APIs and database from catalogoProdotti.",
-      it: "Progetto realizzato con Java Spring e MySQL, connessione a Rest e DB esterni (catalogoProdotti) per prodotti.",
-    },
-    technologies: ["Spring", "API"],
-    githubUrl: "https://github.com/nicola-palo/catalogoProdottiClient.git",
-  },
-  {
-    id: 5,
-    title: "prenotaIlTuoTavolo",
-    description: {
-      en: "Customizable restaurant table reservation platform.",
-      it: "Programma di prenotazione tavoli completamente personalizzabile.",
-    },
-    technologies: ["HTML", "CSS", "JavaScript", "Python", "Flask", "SQLite"],
-    githubUrl: "https://github.com/nicola-palo/prenota-il-tuo-tavolo.git",
-    liveUrl: "https://nicolapieropalo.pythonanywhere.com/",
+    technologies: ["Kotlin", "Android"],
+    githubUrl: "https://github.com/nicola-palo/fitMaster.git"
   },
   {
     id: 6,
@@ -122,13 +123,19 @@ const skills: Skill[] = [
   { name: "Prompt Engineering", level: { en: "Beginner", it: "Base" } },
   { name: "React", level: { en: "Beginner", it: "Base" } },
   { name: "Python", level: { en: "Beginner", it: "Base" } },
+  { name: "Flask", level: { en: "Beginner", it: "Base" } },
+  { name: "Kotlin", level: { en: "Beginner", it: "Base" } },
+  { name: "Android", level: { en: "Beginner", it: "Base" } },
+  { name: "PostgreSQL", level: { en: "Beginner", it: "Base" } },
+  { name: "SQLite", level: { en: "Beginner", it: "Base" } },
   { name: "SQL", level: { en: "Beginner", it: "Base" } },
   { name: "Git", level: { en: "Intermediate", it: "Intermedio" } },
   { name: "Docker", level: { en: "Beginner", it: "Base" } },
-  { name: "Java", level: { en: "Intermediate", it: "Intermedio" } },
   { name: "HTML", level: { en: "Beginner", it: "Base" } },
   { name: "CSS", level: { en: "Beginner", it: "Base" } },
   { name: "Bootstrap", level: { en: "Beginner", it: "Base" } },
+  { name: "JavaScript", level: { en: "Beginner", it: "Base" } },
+  { name: "Java", level: { en: "Intermediate", it: "Intermedio" } },
   { name: "Spring", level: { en: "Beginner", it: "Base" } },
 ];
 

@@ -278,6 +278,9 @@ body.dark .section-title {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
   border: 1px solid rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 body.dark .project-card {
@@ -340,6 +343,7 @@ body.dark .project-description {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
+  margin-top: auto;
 }
 
 .btn {
