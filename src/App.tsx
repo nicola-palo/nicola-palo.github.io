@@ -15,7 +15,6 @@ interface Project {
 
 interface Skill {
   name: string;
-  level: Record<Language, string>;
 }
 
 const translations: Record<
@@ -31,9 +30,13 @@ const translations: Record<
   }
 > = {
   en: {
-    heroSubtitle: "AI Engineer & Software Developer",
+    heroSubtitle: "Software Developer",
     heroDescription:
-      "Computer Science graduate with professional IT experience. I gained hands-on skills in software development, reinforcing the knowledge earned at university and through certifications. I am curious and growth oriented: I enjoy exploring new technologies and expanding my expertise with a flexible, open mindset.",
+      "I am a 26-year-old IT professional with a degree in Computer Science and proven experience in programming. Through ongoing training and the " +
+        "attainment of technical certifications, I have developed strong problem-solving skills and the ability to adapt to new technologies. As a results-oriented and collaborative professional, " +
+        "I am constantly seeking new challenges that allow me to combine my passion for digital innovation with professional growth within dynamic organizations and well-structured teams.\n" +
+        "\n" +
+        "Translated with DeepL.com (free version)",
     projectsTitle: "Projects",
     skillsTitle: "Skills",
     contactsTitle: "Contacts",
@@ -41,9 +44,11 @@ const translations: Record<
     liveDemoLabel: "Live Demo",
   },
   it: {
-    heroSubtitle: "AI Engineer & Software Developer",
+    heroSubtitle: "Software Developer",
     heroDescription:
-      "Laureato in Informatica con esperienza lavorativa nel settore IT. Ho maturato competenze pratiche nello sviluppo software, consolidando le conoscenze acquisite all'universita e tramite varie certificazioni. Sono curioso e orientato alla crescita: mi piace esplorare nuove tecnologie e ampliare costantemente le mie competenze mantenendo un approccio flessibile e aperto alle sfide.",
+      "Professionista IT di 26 anni con laurea in Informatica e comprovata esperienza nella programmazione. Grazie a un percorso di formazione continua e al conseguimento di certificazioni tecniche, " +
+        "ho sviluppato una spiccata capacità di problem solving e adattamento tecnologico. Orientato ai risultati e alla collaborazione, ricerco" +
+        " costantemente nuove sfide che mi permettano di coniugare la mia passione per l'innovazione digitale con la crescita professionale all'interno di realtà dinamiche e team strutturati.",
     projectsTitle: "Progetti",
     skillsTitle: "Competenze",
     contactsTitle: "Contatti",
@@ -119,24 +124,19 @@ const projects: Project[] = [
 ];
 
 const skills: Skill[] = [
-  { name: "RAG", level: { en: "Beginner", it: "Base" } },
-  { name: "Prompt Engineering", level: { en: "Beginner", it: "Base" } },
-  { name: "React", level: { en: "Beginner", it: "Base" } },
-  { name: "Python", level: { en: "Beginner", it: "Base" } },
-  { name: "Flask", level: { en: "Beginner", it: "Base" } },
-  { name: "Kotlin", level: { en: "Beginner", it: "Base" } },
-  { name: "Android", level: { en: "Beginner", it: "Base" } },
-  { name: "PostgreSQL", level: { en: "Beginner", it: "Base" } },
-  { name: "SQLite", level: { en: "Beginner", it: "Base" } },
-  { name: "SQL", level: { en: "Beginner", it: "Base" } },
-  { name: "Git", level: { en: "Intermediate", it: "Intermedio" } },
-  { name: "Docker", level: { en: "Beginner", it: "Base" } },
-  { name: "HTML", level: { en: "Beginner", it: "Base" } },
-  { name: "CSS", level: { en: "Beginner", it: "Base" } },
-  { name: "Bootstrap", level: { en: "Beginner", it: "Base" } },
-  { name: "JavaScript", level: { en: "Beginner", it: "Base" } },
-  { name: "Java", level: { en: "Intermediate", it: "Intermedio" } },
-  { name: "Spring", level: { en: "Beginner", it: "Base" } },
+  { name: "C++" },
+  { name: "Python" },
+  { name: "Docker" },
+  { name: "Canva" },
+  { name: "Java" },
+  { name: "Spring" },
+  { name: "SQL" },
+  { name: "PostgreSQL" },
+  { name: "MySQL" },
+  { name: "TypeScript" },
+  { name: "React" },
+  { name: "Git" },
+  { name: "Claude Code" }
 ];
 
 function App() {
@@ -306,7 +306,6 @@ function App() {
               {skills.map((skill) => (
                 <div key={skill.name} className="skill-item">
                   <div className="skill-name">{skill.name}</div>
-                  <div className="skill-level">{skill.level[language]}</div>
                 </div>
               ))}
             </div>
