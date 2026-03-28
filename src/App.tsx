@@ -34,9 +34,7 @@ const translations: Record<
     heroDescription:
       "I am a 26-year-old IT professional with a degree in Computer Science and proven experience in programming. Through ongoing training and the " +
         "attainment of technical certifications, I have developed strong problem-solving skills and the ability to adapt to new technologies. As a results-oriented and collaborative professional, " +
-        "I am constantly seeking new challenges that allow me to combine my passion for digital innovation with professional growth within dynamic organizations and well-structured teams.\n" +
-        "\n" +
-        "Translated with DeepL.com (free version)",
+        "I am constantly seeking new challenges that allow me to combine my passion for digital innovation with professional growth within dynamic organizations and well-structured teams",
     projectsTitle: "Projects",
     skillsTitle: "Skills",
     contactsTitle: "Contacts",
