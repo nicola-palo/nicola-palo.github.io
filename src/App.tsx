@@ -58,6 +58,39 @@ const translations: Record<
 const projects: Project[] = [
   {
     id: 1,
+    title: "prato-fiorito-terminal",
+    description: {
+      en: "Simple flower lawn terminal game 5x5 grid.",
+      it: "Semplice gioco da terminale di prato fiorito congriglia 5x5.",
+    },
+    technologies: ["C++"],
+    githubUrl: "https://github.com/nicola-palo/parto-fiorito-terminal.git"
+  },
+  {
+    id: 2,
+    title: "ricettAIo",
+    description: {
+      en: "AI powered recipe generator based on available ingredients.",
+      it: "Programma per generare ricette con AI da ingredienti.",
+    },
+    technologies: ["React", "Prompt Engineering", "API"],
+    githubUrl: "https://github.com/nicola-palo/ricettAIo.git",
+    liveUrl: "https://nicolapalo.eu/ricettAIo/",
+  },
+  {
+    id: 3,
+    title: "prenotaIlTuoTavolo",
+    description: {
+      en: "Customizable restaurant table reservation platform. Deployed with PythonAnywhere.",
+      it: "Programma di prenotazione tavoli completamente personalizzabile. Pubblicato con PythonAnywhere.",
+    },
+    technologies: ["HTML", "CSS", "JavaScript", "Python", "Flask", "SQLite"],
+    githubUrl: "https://github.com/nicola-palo/prenota-il-tuo-tavolo.git",
+    liveUrl: "https://nicolapieropalo.pythonanywhere.com/",
+  },
+
+  {
+    id: 4,
     title: "fe.bancomat.react",
     description: {
       en: "React-based front end ATM, connected to two microservices with dedicated databases. Published on GitHub Pages.",
@@ -68,7 +101,7 @@ const projects: Project[] = [
     liveUrl: "https://nicolapalo.eu/fe.bancomat.react/",
   },
   {
-    id: 2,
+    id: 5,
     title: "be.bancomat.java",
     description: {
       en: "BE ATM main, first microservice developed in Java with Spring and PostgreSQL. Deployed with Render.",
@@ -78,7 +111,7 @@ const projects: Project[] = [
     githubUrl: "https://github.com/nicola-palo/be.bancomat.java",
   },
   {
-    id: 3,
+    id: 6,
     title: "be.chatBancomat.python",
     description: {
       en: "BE ATM of the Chat support, second microservice, built with Flask and SQLite. Deployed with Render.",
@@ -87,38 +120,7 @@ const projects: Project[] = [
     technologies: ["Flask", "SQLite", "Docker"],
     githubUrl: "https://github.com/nicola-palo/be.chatBancomat.python",
   },
-  {
-    id: 4,
-    title: "prenotaIlTuoTavolo",
-    description: {
-      en: "Customizable restaurant table reservation platform. Deployed with PythonAnywhere.",
-      it: "Programma di prenotazione tavoli completamente personalizzabile. Pubblicato con PythonAnywhere.",
-    },
-    technologies: ["HTML", "CSS", "JavaScript", "Flask", "SQLite"],
-    githubUrl: "https://github.com/nicola-palo/prenota-il-tuo-tavolo.git",
-    liveUrl: "https://nicolapieropalo.pythonanywhere.com/",
-  },
-  {
-    id: 5,
-    title: "fitMaster",
-    description: {
-      en: "Offline Android app for tracking exercises and workouts, built in Kotlin.",
-      it: "Applicazione interamente locale per la gestione di esercizi e allenamenti, realizzata in Kotlin per Android.",
-    },
-    technologies: ["Kotlin", "Android"],
-    githubUrl: "https://github.com/nicola-palo/fitMaster.git"
-  },
-  {
-    id: 6,
-    title: "ricettAIo",
-    description: {
-      en: "AI powered recipe generator based on available ingredients.",
-      it: "Programma per generare ricette con AI da ingredienti.",
-    },
-    technologies: ["React", "Prompt Engineering", "API"],
-    githubUrl: "https://github.com/nicola-palo/ricettAIo.git",
-    liveUrl: "https://nicolapalo.eu/ricettAIo/",
-  },
+
 ];
 
 const skills: Skill[] = [
