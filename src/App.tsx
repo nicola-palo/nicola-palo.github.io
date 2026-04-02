@@ -58,13 +58,13 @@ const translations: Record<
 const projects: Project[] = [
   {
     id: 1,
-    title: "prato-fiorito-terminal",
+    title: "game.pratoFiorito.cpp",
     description: {
-      en: "Simple flower lawn terminal game 5x5 grid.",
-      it: "Semplice gioco da terminale di prato fiorito congriglia 5x5.",
+      en: "Simple flower lawn terminal game",
+      it: "Semplice gioco da terminale di prato fiorito",
     },
     technologies: ["C++"],
-    githubUrl: "https://github.com/nicola-palo/parto-fiorito-terminal.git"
+    githubUrl: "https://github.com/nicola-palo/game.pratoFiorito.cpp"
   },
   {
     id: 2,
