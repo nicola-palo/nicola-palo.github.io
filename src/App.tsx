@@ -79,7 +79,7 @@ const projects: Project[] = [
   },
   {
     id: 3,
-    title: "prenotaIlTuoTavolo",
+    title: "webapp.prenotaIlTuoTavolo.python",
     description: {
       en: "Customizable restaurant table reservation platform. Deployed with PythonAnywhere.",
       it: "Programma di prenotazione tavoli completamente personalizzabile. Pubblicato con PythonAnywhere.",
