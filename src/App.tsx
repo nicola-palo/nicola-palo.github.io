@@ -30,11 +30,8 @@ const translations: Record<
   }
 > = {
   en: {
-    heroSubtitle: "Software Developer",
-    heroDescription:
-      "I am a 26-year-old IT professional with a degree in Computer Science and proven experience in programming. Through ongoing training and the " +
-        "attainment of technical certifications, I have developed strong problem-solving skills and the ability to adapt to new technologies. As a results-oriented and collaborative professional, " +
-        "I am constantly seeking new challenges that allow me to combine my passion for digital innovation with professional growth within dynamic organizations and well-structured teams",
+    heroSubtitle: "Backend Developer | AI & Data Enthusiast",
+    heroDescription: "Backend Developer specialized in building scalable web systems with Java and Python, with a strong focus on microservices architectures and AI integrations.",
     projectsTitle: "Projects",
     skillsTitle: "Skills",
     contactsTitle: "Contacts",
@@ -42,11 +39,8 @@ const translations: Record<
     liveDemoLabel: "Live Demo",
   },
   it: {
-    heroSubtitle: "Software Developer",
-    heroDescription:
-      "Professionista IT di 26 anni con laurea in Informatica e comprovata esperienza nella programmazione. Grazie a un percorso di formazione continua e al conseguimento di certificazioni tecniche, " +
-        "ho sviluppato una spiccata capacità di problem solving e adattamento tecnologico. Orientato ai risultati e alla collaborazione, ricerco" +
-        " costantemente nuove sfide che mi permettano di coniugare la mia passione per l'innovazione digitale con la crescita professionale all'interno di realtà dinamiche e team strutturati.",
+    heroSubtitle: "Backend Developer | AI & Data Enthusiast",
+    heroDescription: "Sviluppatore backend specializzato nello sviluppo di sistemi web scalabili con Java e Python, con particolare attenzione alle architetture a microservizi e alle integrazioni di intelligenza artificiale.",
     projectsTitle: "Progetti",
     skillsTitle: "Competenze",
     contactsTitle: "Contatti",
@@ -56,41 +50,9 @@ const translations: Record<
 };
 
 const projects: Project[] = [
-  {
-    id: 1,
-    title: "game.pratoFiorito.cpp",
-    description: {
-      en: "Simple flower lawn terminal game",
-      it: "Semplice gioco da terminale di prato fiorito",
-    },
-    technologies: ["C++"],
-    githubUrl: "https://github.com/nicola-palo/game.pratoFiorito.cpp"
-  },
-  {
-    id: 2,
-    title: "ricettAIo",
-    description: {
-      en: "AI powered recipe generator based on available ingredients.",
-      it: "Programma per generare ricette con AI da ingredienti.",
-    },
-    technologies: ["React", "Prompt Engineering", "API"],
-    githubUrl: "https://github.com/nicola-palo/ricettAIo.git",
-    liveUrl: "https://nicolapalo.eu/ricettAIo/",
-  },
-  {
-    id: 3,
-    title: "wa.prenotaIlTuoTavolo.py",
-    description: {
-      en: "Customizable restaurant table reservation platform. Deployed with PythonAnywhere.",
-      it: "Programma di prenotazione tavoli completamente personalizzabile. Pubblicato con PythonAnywhere.",
-    },
-    technologies: ["HTML", "CSS", "JavaScript", "Python", "Flask", "SQLite"],
-    githubUrl: "https://github.com/nicola-palo/prenota-il-tuo-tavolo.git",
-    liveUrl: "https://nicolapieropalo.pythonanywhere.com/",
-  },
 
   {
-    id: 4,
+    id: 1,
     title: "fe.bancomat.react",
     description: {
       en: "React-based front end ATM, connected to two microservices with dedicated databases. Published on GitHub Pages.",
@@ -101,7 +63,7 @@ const projects: Project[] = [
     liveUrl: "https://nicolapalo.eu/fe.bancomat.react/",
   },
   {
-    id: 5,
+    id: 2,
     title: "be.bancomat.java",
     description: {
       en: "BE ATM main, first microservice developed in Java with Spring and PostgreSQL. Deployed with Render.",
@@ -111,7 +73,7 @@ const projects: Project[] = [
     githubUrl: "https://github.com/nicola-palo/be.bancomat.java",
   },
   {
-    id: 6,
+    id: 3,
     title: "be.chatBancomat.python",
     description: {
       en: "BE ATM of the Chat support, second microservice, built with Flask and SQLite. Deployed with Render.",
@@ -120,6 +82,43 @@ const projects: Project[] = [
     technologies: ["Flask", "SQLite", "Docker"],
     githubUrl: "https://github.com/nicola-palo/be.chatBancomat.python",
   },
+
+  {
+    id: 4,
+    title: "wa.prenotaIlTuoTavolo.py",
+    description: {
+      en: "Customizable restaurant table reservation platform. Deployed with PythonAnywhere.",
+      it: "Programma di prenotazione tavoli completamente personalizzabile. Pubblicato con PythonAnywhere.",
+    },
+    technologies: ["HTML", "CSS", "JavaScript", "Python", "Flask", "SQLite"],
+    githubUrl: "https://github.com/nicola-palo/prenota-il-tuo-tavolo.git",
+    liveUrl: "https://nicolapieropalo.pythonanywhere.com/",
+  },
+
+  
+  {
+    id: 5,
+    title: "ricettAIo",
+    description: {
+      en: "AI powered recipe generator based on available ingredients.",
+      it: "Programma per generare ricette con AI da ingredienti.",
+    },
+    technologies: ["React", "Prompt Engineering", "API"],
+    githubUrl: "https://github.com/nicola-palo/ricettAIo.git",
+    liveUrl: "https://nicolapalo.eu/ricettAIo/",
+  },
+
+  {
+    id: 6,
+    title: "game.pratoFiorito.cpp",
+    description: {
+      en: "Simple flower lawn terminal game",
+      it: "Semplice gioco da terminale di prato fiorito",
+    },
+    technologies: ["C++"],
+    githubUrl: "https://github.com/nicola-palo/game.pratoFiorito.cpp"
+  },
+  
 
 ];
 
@@ -136,7 +135,8 @@ const skills: Skill[] = [
   { name: "TypeScript" },
   { name: "React" },
   { name: "Git" },
-  { name: "Claude Code" }
+  { name: "Claude Code" },
+  { name: "Codex"}
 ];
 
 function App() {
