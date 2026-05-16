@@ -60,7 +60,7 @@ const projects: Project[] = [
     },
     technologies: ["React"],
     githubUrl: "https://github.com/nicola-palo/fe.bancomat.react",
-    liveUrl: "https://nicolapalo.eu/fe.bancomat.react/",
+    liveUrl: "https://nicolapalo.it/fe.bancomat.react/",
   },
   {
     id: 2,
@@ -105,7 +105,7 @@ const projects: Project[] = [
     },
     technologies: ["React", "Prompt Engineering", "API"],
     githubUrl: "https://github.com/nicola-palo/ricettAIo.git",
-    liveUrl: "https://nicolapalo.eu/ricettAIo/",
+    liveUrl: "https://nicolapalo.it/ricettAIo/",
   },
 
   {
