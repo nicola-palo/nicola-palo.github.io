@@ -35,7 +35,7 @@ const translations: Record<
   }
 > = {
   en: {
-    heroSubtitle: "AI Engineer & Software Engineer",
+    heroSubtitle: "AI ENGINEER | SOFTWARE ENGINEER",
     heroDescription:
       "Software Engineer bridging robust backend architectures with production-grade AI. Specialized in microservices (Java/Python), LLM pipelines, RAG systems, and scalable data-driven services.",
     heroHook: "I don't stop at the prototype: I design and ship backend systems and AI pipelines to production, from the database to the API.",
@@ -45,7 +45,7 @@ const translations: Record<
     footerText: "\u00A9 2026 Nicola Palo. All rights reserved.",
   },
   it: {
-    heroSubtitle: "AI Engineer & Software Engineer",
+    heroSubtitle: "AI ENGINEER | SOFTWARE ENGINEER",
     heroDescription:
       "Ingegnere del software che unisce backend solido e intelligenza artificiale in produzione. Specializzato in microservizi (Java/Python), pipeline LLM, sistemi RAG e architetture scalabili.",
     heroHook: "Non mi fermo al prototipo: progetto e porto in produzione sistemi backend e pipeline AI, dal database fino all'API.",
