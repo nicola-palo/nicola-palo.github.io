@@ -1,3 +1,7 @@
+/* ==========================================================================
+   Global reset
+   ========================================================================== */
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +15,45 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* ==========================================================================
+   Hero
+   ========================================================================== */
+
+/* Hero hook line: subtler than the main description, gives direction without shouting */
+.hero-hook {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  opacity: 0.7;
+}
+
+/* ==========================================================================
+   Project cards
+   ========================================================================== */
+
+/* Uniform height across the grid, description clamped, buttons anchored
+   to the bottom regardless of how much text a given project has. */
+.project-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.project-description {
+  flex: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Button group can hold a primary CTA plus compact secondary repo icons
+   (e.g. the consolidated ATM card: 1 demo button + 3 repo icons) */
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
